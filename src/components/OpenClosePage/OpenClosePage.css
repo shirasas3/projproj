@@ -1,0 +1,75 @@
+* {
+    overflow: hidden;
+}
+
+.backgroundImgStart {
+    background-image: url("src/assets/StartCardBg.png");
+    background-size: 100%, 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-color: black;
+
+}
+
+.progressBarPic {
+    bottom: 25%;
+    left: 33%;
+    position: absolute;
+}
+
+.StartBtn {
+    position: absolute;
+    bottom: 15%;
+    left: 40%;
+    width: 20%;
+    height: 10%;
+}
+
+.titleStart{
+    font-family: "shalbsbl";
+    position: absolute;
+    color: #B0D6FB;
+    font-size: 6vh;
+    left: 30%;
+    bottom: 70%;
+    size: 50%;
+}
+
+.textStart {
+    position: absolute;
+    color: #B0D6FB;
+    font-size: 3vh;
+    font-family: "shalbsbl";
+    text-align: center;
+    top: 30%;
+    left: 20%;
+    width: 70%;
+}
+
+.textStart2 {
+    position: absolute;
+    color: #B0D6FB;
+    font-size: 3vh;
+    font-family: "shalbsbl";
+    text-align: center;
+    bottom: 35%;
+    left: 20%;
+    width: 70%;
+}
+
+.DefIconStart{
+    position: absolute;
+    width: 8%;
+    right: 45%;
+    top: 40%;
+}
+
+.logo{
+    position: absolute;
+    top: 13%;
+    left: 9%;
+    width: 4%;
+
+}

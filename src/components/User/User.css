@@ -1,0 +1,14 @@
+.user-pic {
+    float: right;
+}
+
+.icon {
+    height: 30px;
+    width: 30px;
+    padding: 1vh 0vw 0vh 0.5vw ;
+}
+
+
+.date {
+    color: gray;
+}

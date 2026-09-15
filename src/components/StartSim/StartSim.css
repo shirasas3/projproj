@@ -1,0 +1,105 @@
+* {
+    overflow: hidden;
+}
+
+.backgroundImgStart {
+    background-image: url(../../assets/StartCardBg.png);
+    background-size: 100%, 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-color: black;
+
+}
+
+.progressBarPic {
+    bottom: 25%;
+    left: 33%;
+    position: absolute;
+}
+
+.StartBtn1 {
+    position: absolute;
+    bottom: 15%;
+    left: 40%;
+    width: 20%;
+    height: 10%;
+}
+
+.titleStart1{
+    font-family: "shalbsbl";
+    position: absolute;
+    color: #B0D6FB;
+    font-size: 6vh;
+    left: 30%;
+    bottom: 70%;
+    size: 50%;
+}
+
+.textStart1 {
+    position: absolute;
+    color: #B0D6FB;
+    font-size: 3vh;
+    font-family: "shalbsbl";
+    text-align: center;
+    top: 30%;
+    left: 20%;
+    width: 70%;
+}
+
+.textStart2 {
+    position: absolute;
+    color: #B0D6FB;
+    font-size: 3vh;
+    font-family: "shalbsbl";
+    text-align: center;
+    bottom: 35%;
+    left: 20%;
+    width: 70%;
+}
+
+.DefIconStart{
+    position: absolute;
+    width: 8%;
+    right: 45%;
+    top: 40%;
+}
+
+.logo{
+    position: absolute;
+    top: 13%;
+    left: 9%;
+    width: 4%;
+
+}
+
+
+.animEnd {
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typingAnimationEnd 10s steps(26, end) infinite,  /* The 26 here should equal
+    * the amount of characters, spaces included */
+    blinkAnimation 5s step-end infinite;
+}
+
+@keyframes typingAnimationEnd {
+  0% {
+    width: 0;
+  }
+  20%, 90% {
+    width: 65%;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes blinkAnimation {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: lightblue;
+  }
+}

@@ -1,0 +1,163 @@
+.definition-page {
+  --neon-blue: #82c6ff;
+  --neon-green: #00c997;
+
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  background: #000;
+  color: var(--neon-blue);
+  padding: 0 30px 90px;
+}
+
+/* Swiper is used ONLY inside this component. */
+.definition-page .definition-carousel {
+  width: 100%;
+  margin: 20px auto;
+  overflow: hidden;
+}
+
+.definition-page .definition-carousel__swiper {
+  width: 100%;
+  height: 535px;
+  overflow: clip;
+  direction: ltr;   /* 👈 make sure this line is still present */
+}
+
+.definition-page .definition-carousel__swiper .swiper-wrapper {
+  direction: ltr;   /* 👈 add here too, since wrapper is a flex container that can independently inherit rtl */
+  align-items: flex-start;
+}
+
+.definition-page .definition-carousel__swiper .swiper-slide {
+  width: 320px;
+  height: 520px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  box-sizing: border-box;
+  overflow: visible;
+  transform: scale(0.85);      
+  opacity: 0.7;
+  transition: transform 1s ease, opacity 0.5s ease;
+}
+
+/* Side cards */
+.definition-page .definition-carousel__swiper .swiper-slide-prev,
+.definition-page .definition-carousel__swiper .swiper-slide-next {
+  padding-top: 72px;
+  transform: scale(0.88);
+  opacity: 0.95;
+}
+
+/* Center card */
+.definition-page .definition-carousel__swiper .swiper-slide-active {
+  transform: scale(1);         
+  opacity: 1;
+  z-index: 2;
+}
+
+/* Custom arrows: Swiper navigation controls only this carousel. */
+.definition-page .definition-carousel__arrow {
+  background-image: url("src/assets/DefNext.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 235px;
+  z-index: 20;
+  width: 70px;
+  height: 80px;
+  border: 0;
+  cursor: pointer;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.definition-page .definition-carousel__arrow:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 8px var(--neon-green));
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.definition-page .definition-carousel__arrow.swiper-button-disabled {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.definition-page .definition-carousel__prev {
+  left: 0;
+}
+
+.definition-page .definition-carousel__next {
+  rotate: 180deg;
+  right: 0;
+}
+
+/* Hide Swiper's built-in arrow icons because we use our own. */
+.definition-page .definition-carousel__arrow::after {
+  display: none;
+}
+
+/* Glowing platform under the active card. */
+.definition-page .definition-platform {
+  position: absolute;
+  top: 515px;
+  left: 50%;
+  width: 300px;
+  height: 155px;
+  transform: translateX(-50%);
+  pointer-events: none;
+  filter: drop-shadow(0 0 5px rgba(130, 198, 255, 0.85));
+}
+
+.definition-page .platform-ring {
+  position: absolute;
+  left: 50%;
+  border: 3px solid var(--neon-blue);
+  border-radius: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 0 5px var(--neon-blue);
+}
+
+.definition-page .platform-ring--outer {
+  top: 85px;
+  width: 270px;
+  height: 43px;
+}
+
+.definition-page .platform-ring--inner {
+  top: 90px;
+  width: 250px;
+  height: 31px;
+}
+
+.definition-page .platform-line {
+  position: absolute;
+  bottom: 20px;
+  width: 3px;
+  border-radius: 5px;
+  background: var(--neon-blue);
+  box-shadow: 0 0 5px var(--neon-blue), 0 0 12px rgba(130, 198, 255, 0.75);
+}
+
+.definition-page .DefCircle {
+    position: absolute;
+    width: 15vw;
+    height: 15vh;
+    bottom: 12%;
+    right: 42%;
+}
+
+.back-btn {
+  position: absolute;
+  width: 10%;
+  height: 8%;
+  bottom: 5%;
+  left: 2%;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+

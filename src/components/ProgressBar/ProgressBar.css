@@ -1,0 +1,39 @@
+.circles {
+    display: flex;
+    width: 30%;
+    bottom: 8.6%;
+    left: 50.7%;
+    gap: 13%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.circle {
+    width: 80%;
+}
+
+.progressLine {
+    border-radius: 10px;
+    width: 28%;
+    height: 2%;
+    bottom: 16%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.progressLine1 {
+    background-image: linear-gradient(to right, #122645 73%, #00A5F9 100%);
+}
+
+.progressLine2 {
+    background-image: linear-gradient(to right, #122645 0%, #00A5F9 100%);
+}
+
+.progressLine3 {
+    background-image: linear-gradient(to right, #122645 0%, #00A5F9 58%);
+}
+
+.progressLine4 {
+    background-image: linear-gradient(to right, #122645 12%, #00A5F9 28%);
+}

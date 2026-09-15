@@ -1,0 +1,27 @@
+.Simulation1 {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+}
+
+
+.titleSim {
+    font-family: "shalbsbl";
+    color: #B0D6FB;
+    font-size: 6vh;
+    top: 0%;
+    right: 10%;
+    size: 100%;
+    position: absolute;
+}
+
+.instuctions {
+    font-family: "shalbsbl";
+    color: #B0D6FB;
+    font-size: 3vh;
+    top: 30%;
+    right: 10%;
+    size: 30%;
+    width: 30%;
+    position: absolute;
+}

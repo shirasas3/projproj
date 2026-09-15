@@ -1,0 +1,37 @@
+.next {
+    position: absolute;
+    transform: rotate(180deg);
+    bottom: 15%;
+    right: 85%;
+    width: 7vw;
+    cursor: pointer;
+}
+
+
+.back {
+    position: absolute;
+    bottom: 15%;
+    right: 10%;
+    width: 7vw;
+    cursor: pointer;
+}
+
+
+.backText {
+    position: absolute;
+    font-family: "shalbsbl";
+    color:aliceblue;
+    bottom: 15%;
+    right: 12%;
+    font-size: 1.5vw;
+    cursor: pointer;
+}
+.frontText {
+    position: absolute;
+    font-family: "shalbsbl";
+    color:aliceblue;
+    bottom: 15%;
+    left: 10%;
+    font-size: 1.5vw;
+    cursor: pointer;
+}

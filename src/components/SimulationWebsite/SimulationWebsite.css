@@ -1,0 +1,85 @@
+#write-blog-btn {
+    position: absolute;
+    right: 2vw;
+    bottom: 5vh;
+    height: 6vh;
+    min-height: 50px;
+    cursor: pointer;
+}
+
+body {
+    background-color: #303030;
+    font-family: "Calibri";
+    direction: rtl;
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+#app {
+    background-image: url("../../assets/simulationComputer.png");
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    margin: 0;
+    width: 50vw;
+    height: 76vh;
+    min-width: 450px;
+    bottom: 0%;
+    overflow-y: scroll;
+    position: absolute;
+}
+
+.blog-area {
+    top: 15vh;
+    height: 65%;
+    position: relative;
+}
+
+.star-icon {
+    height: 75%;
+}
+
+.url {
+    direction: ltr;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    padding: 0.2%;
+    width: 75%;
+    height: 2%;
+    top: 4%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.search-bar {
+    direction: ltr;
+    position: absolute;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    padding: 0.4%;
+    width: 30%;
+    height: 2%;
+    top: 14%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+}
+
+.search-input {
+    border: none;
+    width: 95%;
+}
+
+.url-input {
+
+    border: none;
+    width: 95%;
+}

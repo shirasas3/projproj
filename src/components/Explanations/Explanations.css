@@ -1,0 +1,105 @@
+* {
+    overflow: hidden;
+}
+
+
+.backgroundImg {
+    background-image: url(../../assets/CardBg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+
+.text {
+    position: absolute;
+    color: #B0D6FB;
+    font-size: 3vh;
+    font-family: "shalbsbl";
+    text-align: center;
+    bottom: 25%;
+    left: 20%;
+    width: 70%;
+}
+.title{
+    font-family: "shalbsbl";
+    position: absolute;
+    color: #B0D6FB;
+    font-size: 6vh;
+    left: 40%;
+    bottom: 70%;
+    size: 50%;
+}
+
+
+.defenition{
+    position: absolute;
+    width: 6%;
+    right: 7%;
+    top: 13%;
+    cursor: pointer;
+}
+
+
+.logo{
+    position: absolute;
+    top: 13%;
+    left: 9%;
+    width: 4%;
+}
+
+
+.Gif{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    width: 17%;
+}
+
+
+.flow {
+    position: absolute;
+    top:0%;
+    width: 65%;
+    left: 20%;
+    top: 35%;
+
+
+}
+.flowchartTreeDOM{
+    position: absolute;
+    width: 35%;
+    bottom: 25%;
+    left: 15%;
+
+
+}
+.flowchartDOM{
+    position: absolute;
+    width: 15%;
+    bottom: 14%;
+    left: 25%;
+}
+
+
+.text14{
+    position: absolute;
+    color: #B0D6FB;
+    font-size: 3vh;
+    font-family: "shalbsbl";
+    text-align: center;
+    bottom: 25%;
+    right: 15%;
+    width: 30%;
+}
+
+
+.xssIntroductionChart{
+    position: absolute;
+    width: 30%;
+    height: 40%;
+    bottom: 30%;
+    left: 20%;
+}

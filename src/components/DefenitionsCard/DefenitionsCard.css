@@ -1,0 +1,78 @@
+.definition-card {
+  /* --blue: #82c6ff; */
+
+  /* background-image: url("../../assets/DefCard.png"); */
+  position: relative;
+  width: 80%;
+  /* max-width: 470px; */
+  height: 100%;
+  box-sizing: border-box;
+  overflow: visible;
+  /* background-size: 80% 80%;
+  background-repeat: no-repeat; */
+    /* background-position: center; */
+}
+
+.definition-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--blue);
+  clip-path: inherit;
+  filter: drop-shadow(0 0 3px var(--blue))
+          drop-shadow(0 0 8px rgba(130, 198, 255, 0.5));
+}
+
+.definition-card::after {
+  content: "";
+  position: absolute;
+  inset: 3px;
+  background: #000;
+  clip-path: inherit;
+}
+
+.definition-card__content {
+  background-image: url("../../assets/DefCard.png");
+  background-size: 100% 100%;
+  position: absolute;
+  /* inset: 0; */
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 18px 65px 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.definition-card h2 {
+  margin: 0;
+  color: #0088d5;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(30px, 2.8vw, 42px);
+  font-style: italic;
+  font-weight: 800;
+  letter-spacing: 1px;
+  line-height: 1.15;
+}
+
+.definition-card p {
+  margin: 92px 0 0;
+  color: #66b9ff;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 18px;
+  line-height: 1.42;
+}
+
+@media (max-width: 760px) {
+  .definition-card {
+    height: 520px;
+    max-width: 430px;
+  }
+
+  .definition-card__content {
+    padding: 25px 50px 45px;
+  }
+}
