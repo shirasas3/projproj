@@ -17,6 +17,7 @@ const StoredAttack = ({setSubjectNum, setPageNum, setExplanations, setIsStored, 
   const question = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus euismod scelerisque tristique.";
   
 
+  
   const nextExc = () => {
     setIsStored("defence")
   }
