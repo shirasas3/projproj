@@ -2,6 +2,7 @@ import { useRef, useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import DefCircle from "../../assets/DefCircle.png";
+import DefNext from "../../assets/DefNext.png";
 import cardsData from "../../card.js";
 
 import "swiper/css";
@@ -63,6 +64,7 @@ const DefenitionsPage = ({ setIsDefenitions }) => {
           className="definition-carousel__arrow definition-carousel__prev"
           aria-label="Previous definition"
           onClick={rotatePrev}
+          style={{ backgroundImage: `url(${DefNext})` }}
         />
 
         <button
@@ -70,6 +72,7 @@ const DefenitionsPage = ({ setIsDefenitions }) => {
           className="definition-carousel__arrow definition-carousel__next"
           aria-label="Next definition"
           onClick={rotateNext}
+          style={{ backgroundImage: `url(${DefNext})` }}
         />
       </section>
 

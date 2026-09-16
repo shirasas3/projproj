@@ -61,7 +61,6 @@
 
 /* Custom arrows: Swiper navigation controls only this carousel. */
 .definition-page .definition-carousel__arrow {
-  background-image: url("src/assets/DefNext.png");
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
