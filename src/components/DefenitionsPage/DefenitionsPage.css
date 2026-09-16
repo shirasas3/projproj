@@ -86,12 +86,12 @@
 }
 
 .definition-page .definition-carousel__prev {
-  left: 0;
+  left: 10px;
 }
 
 .definition-page .definition-carousel__next {
   rotate: 180deg;
-  right: 0;
+  right: 10px;
 }
 
 /* Hide Swiper's built-in arrow icons because we use our own. */
